@@ -17,26 +17,26 @@
 
     <f:section title="${%ExecutorSettings}">
       <f:advanced>
-        <f:entry title="${%ExecutorVersion}" field="executorVersion" help="/plugin/${descriptor.pluginName}/help/LCTestBuilder/executorVersion.html">
+        <f:entry title="${%ExecutorVersion}" field="executorVersion" help="/plugin/${descriptor.pluginUrl}/help/LCTestBuilder/executorVersion.html">
           <f:select />
         </f:entry>
-        <f:entry title="${%ActionOnWarningsTitle}" field="actionOnWarnings" help="/plugin/${descriptor.pluginName}/help/LCTestBuilder/actionOnWarnings.html">
+        <f:entry title="${%ActionOnWarningsTitle}" field="actionOnWarnings" help="/plugin/${descriptor.pluginUrl}/help/LCTestBuilder/actionOnWarnings.html">
           <f:select default="NONE"/>
         </f:entry>
-        <f:entry title="${%ActionOnErrorsTitle}" field="actionOnErrors" help="/plugin/${descriptor.pluginName}/help/LCTestBuilder/actionOnErrors.html">
+        <f:entry title="${%ActionOnErrorsTitle}" field="actionOnErrors" help="/plugin/${descriptor.pluginUrl}/help/LCTestBuilder/actionOnErrors.html">
           <f:select default="MAKE_UNSTABLE"/>
         </f:entry>
-        <f:optionalBlock title="${%UseTestTimeout}" inline="true" field="useTimeout" help="/plugin/${descriptor.pluginName}/help/LCTestBuilder/useTimeout.html">
+        <f:optionalBlock title="${%UseTestTimeout}" inline="true" field="useTimeout" help="/plugin/${descriptor.pluginUrl}/help/LCTestBuilder/useTimeout.html">
           <f:entry title="${%TimeoutInSeconds}" field="timeout">
             <f:textbox value="${instance.useTimeout ? instance.timeout : ''}" />
           </f:entry>
         </f:optionalBlock>
 
-        <f:entry title="${%GeneratePDF}" field="generatePDF" help="/plugin/${descriptor.pluginName}/help/LCTestBuilder/generatePDF.html">
+        <f:entry title="${%GeneratePDF}" field="generatePDF" help="/plugin/${descriptor.pluginUrl}/help/LCTestBuilder/generatePDF.html">
           <f:checkbox default="true"/>
         </f:entry>
 
-        <f:entry title="${%GenerateMHT}" field="generateMHT" help="/plugin/${descriptor.pluginName}/help/LCTestBuilder/generateMHT.html">
+        <f:entry title="${%GenerateMHT}" field="generateMHT" help="/plugin/${descriptor.pluginUrl}/help/LCTestBuilder/generateMHT.html">
           <f:checkbox default="false"/>
         </f:entry>
       </f:advanced>

@@ -101,7 +101,7 @@ public class LCReportAction implements Action, Serializable {
 
     @Exported(name="url")
     public String getUrl() {
-        return Jenkins.getInstance().getRootUrl() + run.getUrl() + Constants.PLUGIN_NAME + "/reports/" + id;
+        return Jenkins.getInstance().getRootUrl() + run.getUrl() + Constants.PLUGIN_URL + "/reports/" + id;
     }
 
     public String getZipLogFileName() {

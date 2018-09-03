@@ -54,7 +54,7 @@ public class LCSummaryAction implements Action {
     }
 
     public String getIconFileName() {
-        return "/plugin/" + Constants.PLUGIN_NAME + "/images/lc-48x48.png";
+        return "/plugin/" + Constants.PLUGIN_URL + "/images/lc-48x48.png";
     }
 
     public String getDisplayName() {
@@ -62,7 +62,7 @@ public class LCSummaryAction implements Action {
     }
 
     public String getUrlName() {
-        return Constants.PLUGIN_NAME;
+        return Constants.PLUGIN_URL;
     }
 
     public Run<?, ?> getRun() {
@@ -112,8 +112,8 @@ public class LCSummaryAction implements Action {
         return dynamic;
     }
 
-    public String getPluginName() {
-        return Constants.PLUGIN_NAME;
+    public String getPluginUrl() {
+        return Constants.PLUGIN_URL;
     }
 
     public Api getApi() {

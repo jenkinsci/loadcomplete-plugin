@@ -536,8 +536,8 @@ public class LCTestBuilder extends Builder implements Serializable, SimpleBuildS
             load();
         }
 
-        public String getPluginName() {
-            return Constants.PLUGIN_NAME;
+        public String getPluginUrl() {
+            return Constants.PLUGIN_URL;
         }
 
         @Override
@@ -577,7 +577,7 @@ public class LCTestBuilder extends Builder implements Serializable, SimpleBuildS
         public ListBoxModel doFillExecutorVersionItems() {
             ListBoxModel model = new ListBoxModel();
             model.add(Messages.LCTestBuilder_Descriptor_LatestTagText(), Constants.ANY_CONSTANT);
-            model.add("4", "4.0");
+            model.add("4", "4");
             return model;
         }
 

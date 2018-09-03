@@ -29,6 +29,7 @@ package com.smartbear.jenkins.plugins.loadcomplete;
  */
 public class Constants {
 
+    public static final String PLUGIN_URL = "loadcomplete";
     public static final String PLUGIN_NAME = "LoadComplete";
     public static final String LOG_PREFIX = "LoadComplete";
     public static final String REPORTS_DIRECTORY_NAME = "lcreports";
