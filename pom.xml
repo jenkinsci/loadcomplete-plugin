@@ -20,7 +20,7 @@
   <description>Allows users to launch LoadComplete tests from Jenkins</description>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>hpi</packaging>
-  <url>https://plugins.jenkins.io/LoadComplete</url>
+  <url>http://wiki.jenkins-ci.org/display/JENKINS/LoadComplete+Support+Plugin</url>
 
   <licenses>
     <license>

@@ -311,7 +311,7 @@ public class LCTestBuilder extends Builder implements Serializable, SimpleBuildS
 
             LCLog.info(listener, Messages.LCTestBuilder_ExitCodeMessage(), exitCode);
 
-            processFiles(listener, workspace, LCReportAction, startTime, stopTime);
+            processFiles(listener, workspace, LCReportAction, startTime, stopTime, exitCode);
 
             if (exitCode == 0) {
                 result = true;
@@ -370,7 +370,7 @@ public class LCTestBuilder extends Builder implements Serializable, SimpleBuildS
     }
 
     private void processFiles(TaskListener listener, Workspace workspace, LCReportAction testResult,
-                              long startTime, long stopTime) throws IOException, InterruptedException {
+                              long startTime, long stopTime, int exitCode) throws IOException, InterruptedException {
 
         boolean hasError = false;
         BufferedReader br = null;
@@ -392,7 +392,7 @@ public class LCTestBuilder extends Builder implements Serializable, SimpleBuildS
 
         String extraInfo = "";
 
-        if (!hasError) {
+        if (!hasError && exitCode > -1 && exitCode < 3) {
             extraInfo = " " + Messages.LCTestBuilder_CheckLogGenerationOptions();
         }
 
