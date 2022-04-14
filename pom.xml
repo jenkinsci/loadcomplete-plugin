@@ -1,4 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
@@ -20,7 +20,7 @@
   <description>Allows users to launch LoadComplete tests from Jenkins</description>
   <version>1.1-SNAPSHOT</version>
   <packaging>hpi</packaging>
-  <url>http://wiki.jenkins-ci.org/display/JENKINS/LoadComplete+Support+Plugin</url>
+  <url>https://plugins.jenkins.io/loadcomplete/</url>
 
   <licenses>
     <license>
@@ -32,7 +32,7 @@
   <repositories>
     <repository>
       <id>repo.jenkins-ci.org</id>
-      <url>http://repo.jenkins-ci.org/public/</url>
+      <url>https://repo.jenkins-ci.org/public/</url>
     </repository>
   </repositories>
 
@@ -45,16 +45,16 @@
   </dependencies>
 
   <scm>
-    <connection>scm:git:git://github.com/jenkinsci/loadcomplete-plugin.git</connection>
+    <connection>scm:git:https://github.com/jenkinsci/loadcomplete-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/loadcomplete-plugin.git</developerConnection>
-    <url>http://github.com/jenkinsci/loadcomplete-plugin</url>
+    <url>https://github.com/jenkinsci/loadcomplete-plugin</url>
     <tag>HEAD</tag>
   </scm>
 
   <pluginRepositories>
     <pluginRepository>
       <id>repo.jenkins-ci.org</id>
-      <url>http://repo.jenkins-ci.org/public/</url>
+      <url>https://repo.jenkins-ci.org/public/</url>
     </pluginRepository>
   </pluginRepositories>
 
